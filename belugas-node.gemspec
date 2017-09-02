@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Miguel Alfredo Garcia Baca"]
   spec.email         = ["weare@icalialabs.com"]
 
-  spec.summary       = %q{A Ruby CLI for node feature detection}
-  spec.description   = %q{A Ruby CLI for node feature detection using awesome Belugas}
+  spec.summary       = %q{A Ruby CLI for node js feature detection}
+  spec.description   = %q{A Ruby CLI for node js feature detection using awesome Belugas}
   spec.homepage      = "https://github.com/icalialabs/belugas-node"
   spec.license       = "MIT"
 

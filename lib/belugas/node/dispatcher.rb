@@ -2,7 +2,7 @@ require 'belugas/node/feature/handler'
 require 'belugas/node/feature/builder'
 require 'belugas/node/parser/package'
 require 'belugas/node/standard_names/base'
-# require 'belugas/node/libraries_collection'
+require 'belugas/node/libraries_collection'
 
 module Belugas
   module Node

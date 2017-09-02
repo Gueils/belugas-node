@@ -1,4 +1,5 @@
 require 'bundler'
+require 'belugas/node/dependency'
 # Class responsible for parsing the package.json dependencies
 module Belugas
   module Node
