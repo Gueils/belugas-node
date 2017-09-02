@@ -1,6 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/Gueils/belugas-node/badges/gpa.svg)](https://codeclimate.com/github/Gueils/belugas-node)
 [![Test Coverage](https://codeclimate.com/github/Gueils/belugas-node/badges/coverage.svg)](https://codeclimate.com/github/Gueils/belugas-node/coverage)
-[![Build Status](https://travis-ci.org/WhalesIL/belugas-node.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-node)
+[![Build Status](https://travis-ci.org/Gueils/belugas-node.svg?branch=master)](https://travis-ci.org/Gueils/belugas-node)
 
 <p align="center">
   <img src="belugas.png" height="300px" alt="Belugas Ruby"/>
