@@ -1,7 +1,7 @@
 module Belugas
   module Node
     class Dependency
-
+      attr_accessor :standard_name
       def initialize(npm_dependency)
         @npm_dependency = npm_dependency
       end
@@ -16,10 +16,10 @@ module Belugas
                      end
       end
 
-      # def update(new_name)
-      #   @standard_name = new_name
-      #   self
-      # end
+      def update(new_name)
+        @standard_name = new_name
+        self
+      end
 
       def categories
         StandardNames::NAMES[name] && StandardNames::NAMES[name]["categories"]
