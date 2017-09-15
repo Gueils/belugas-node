@@ -13,6 +13,8 @@ module Belugas
       def version
         @version ||= if categories.include?("Database")
                        database_version
+                      else
+                        @npm_dependency.version
                      end
       end
 

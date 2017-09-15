@@ -15,11 +15,11 @@ describe Belugas::Node::Parser::Package do
   end
 
   it "has_a node version" do
-    expect(subject.node_version).to eq("6.11.2")
+    expect(subject.node_version).to eq("6.11.3")
   end
 
   it "has_no node version" do
    no_node_package_subject = Belugas::Node::Parser::Package.new("spec/support/no_node_version_package.json")
-    expect(no_node_package_subject.node_version).to eq("6.11.2")
+    expect(no_node_package_subject.node_version).to eq("6.11.3")
   end
 end

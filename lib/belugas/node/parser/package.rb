@@ -5,7 +5,7 @@ module Belugas
   module Node
     module Parser
       class Package
-        FALLBACK_NODE_VERSION = '6.11.2'.freeze
+        FALLBACK_NODE_VERSION = '6.11.3'.freeze
         FALLBACK_NPM_VERSION = '3.10.10'.freeze
 
         attr_reader :content
