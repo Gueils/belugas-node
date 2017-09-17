@@ -9,7 +9,7 @@ module FeatureExamples
          'engines' => ['belugas', 'belugas-node'] },
        { 'type' => 'feature',
          'name' => 'express',
-         'version' => '^4.14.0',
+         'version' => '4.14.0',
          'description' => 'The application uses express',
          'content' => '',
          'categories' => ['Framework'],
