@@ -1,14 +1,9 @@
-[![Code Climate](https://codeclimate.com/github/Gueils/belugas-node/badges/gpa.svg)](https://codeclimate.com/github/Gueils/belugas-node)
-[![Test Coverage](https://codeclimate.com/github/Gueils/belugas-node/badges/coverage.svg)](https://codeclimate.com/github/Gueils/belugas-node/coverage)
 [![Build Status](https://travis-ci.org/Gueils/belugas-node.svg?branch=master)](https://travis-ci.org/Gueils/belugas-node)
 
-<p align="center">
-  <img src="belugas.png" height="300px" alt="Belugas Ruby"/>
-</p>
 
 ## Overview
 
-`belugas-node` is an engine for detecting application [features](#what-is-a-feature) for Ruby projects based on static analysis, in other words `belugas-node` engine can detect the language, framework, database & dependencies your Ruby application is using.
+`belugas-node` is an engine for detecting application [features](#what-is-a-feature) for Node.js projects based on static analysis, in other words `belugas-node` engine can detect the language, framework, database & dependencies your Node application is using.
 
 This engine works as command line interface on your local machine of a Docker container:
 
@@ -38,9 +33,9 @@ A feature has the following format:
 ```
 {
   "type":"feature",
-  "name":"Ruby",
-  "version":"2.4",
-  "description":"The application uses Ruby code",
+  "name":"Node",
+  "version":"6.11.3",
+  "description":"The application uses Node code",
   "content":"",
   "categories":["Language"],
   "cue_locations":[""],
@@ -64,10 +59,7 @@ Where:
 Currently `belugas-node` can detect the following frameworks, databases, libraries and services:
 
 Frameworks:
-
-- Rails
-- Sinatra
-- Middleman
+- Express
 
 Databases:
 
@@ -77,16 +69,12 @@ Databases:
 
 Libraries & Services:
 
-- Webkit
-- Rmagick
-- Sidekiq
-
 
 ## Installation
 
 ### Prerequisites
 
-The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/whalesli/belugas-node/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
+The Belugas node CLI is distributed and run as a [Docker](https://hub.docker.com/r/whalesli/belugas-node/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
 
 ### Setup
 
@@ -120,17 +108,17 @@ And voilá! The terminal will stream a json output for each of the features dete
 ```
 {
   "type":"feature",
-  "name":"Ruby",
-  "version":"2.3.1",
-  "description":"The application uses Ruby code",
+  "name":"Node",
+  "version":"6.11.3",
+  "description":"The application uses Node code",
   "categories":["Language"],
   "engines":["belugas","belugas-node"]
 }
 {
   "type":"feature",
-  "name":"rails",
-  "version":"4.2.6",
-  "description":"The application uses rails",
+  "name":"express",
+  "version":"4.14.0",
+  "description":"The application uses express",
   "content":"",
   "categories":["Framework"],
   "cue_locations":[""],
@@ -143,16 +131,6 @@ And voilá! The terminal will stream a json output for each of the features dete
   "description":"The application uses postgresql",
   "content":"",
   "categories":["Database"],
-  "cue_locations":[""],
-  "engines":["belugas","belugas-node"]
-}
-{
-  "type":"feature",
-  "name":"sidekiq",
-  "version":"0",
-  "description":"The application uses sidekiq",
-  "content":"",
-  "categories":["Service"],
   "cue_locations":[""],
   "engines":["belugas","belugas-node"]
 }
