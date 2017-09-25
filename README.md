@@ -22,7 +22,7 @@ This engine works as command line interface on your local machine of a Docker co
 
 ## Why?
 
-`belugas-node` is part of the [Whales](https://github.com/whalesli/whales) ecosystem: A set of tools to automatically dockerize your applications.
+`belugas-node` is part of the [Whales](https://github.com/gueils/whales) ecosystem: A set of tools to automatically dockerize your applications.
 
 ## What is a feature?
 
@@ -74,14 +74,14 @@ Libraries & Services:
 
 ### Prerequisites
 
-The Belugas node CLI is distributed and run as a [Docker](https://hub.docker.com/r/whalesli/belugas-node/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
+The Belugas node CLI is distributed and run as a [Docker](https://hub.docker.com/r/gueils/belugas-node/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
 
 ### Setup
 
 Fire up your terminal and run:
 
 ```console
-docker pull whalesil/belugas-node:latest
+docker pull gueils/belugas-node:development
 ```
 
 And that's it!
@@ -100,7 +100,7 @@ And then just execute the following command:
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  whalesil/belugas-node
+  gueils/belugas-node:development
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format:
@@ -138,13 +138,13 @@ And voilá! The terminal will stream a json output for each of the features dete
 
 ## Contributing
 
-Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/whalesli/belugas-node/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/whalesli/belugas-node/graphs/contributors)!
+Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/gueils/belugas-node/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/gueils/belugas-node/graphs/contributors)!
 
 ### Create an Issue
 
-Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/whalesli/belugas-node/issues/new).
+Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/gueils/belugas-node/issues/new).
 
-Just please make sure you check [existing issues](https://github.com/whalesli/belugas-node/issues) to see if what you're running into has been addressed already.
+Just please make sure you check [existing issues](https://github.com/gueils/belugas-node/issues) to see if what you're running into has been addressed already.
 
 ### Submit a Pull Request
 
@@ -158,11 +158,11 @@ Once you've created a pull request, mainteners will chime in to review your prop
 
 ### I want to contribute but don't know where to start
 
-That's great also! We already have some [open issues](https://github.com/whalesli/belugas-node/issues) for you to dive in.
+That's great also! We already have some [open issues](https://github.com/gueils/belugas-node/issues) for you to dive in.
 
 ## Copyright
 
-See [LICENSE](https://github.com/whalesli/belugas-node/blob/master/LICENSE.txt)
+See [LICENSE](https://github.com/gueils/belugas-node/blob/master/LICENSE.txt)
 
 ![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 
