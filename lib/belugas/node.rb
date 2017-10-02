@@ -11,8 +11,10 @@ module Belugas
       desc "analyze --package-path=/app/code", "Node js feature detection JSON"
       method_option "package-path", type: :string, default: "/code/package.json", required: false, aliases: "-p"
       def analyze
-        dispatcher = Belugas::Node::Dispatcher.new(options["package-path"])
-        dispatcher.render
+        if File.file?(options["package-path"])
+          dispatcher = Belugas::Node::Dispatcher.new(options["package-path"])
+          dispatcher.render
+        end
       end
     end
   end
